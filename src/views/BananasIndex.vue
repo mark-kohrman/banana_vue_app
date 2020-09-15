@@ -2,13 +2,14 @@
   <div class="home">
     <h1>Look at all these bananas!!!</h1>
     <div v-for="banana in bananas">
+
       <h2>{{ banana.country }}</h2>
       <p>{{ banana.company }}</p>
       <p>{{ banana.price }}</p>
+      <a v-bind:href="`/bananas/${banana.id}`">Check Out This Banana</a>
 
     </div>
    
-
   </div>
 </template>
 
