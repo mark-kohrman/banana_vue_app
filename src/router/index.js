@@ -1,7 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
-import BananasIndex from '../views/BananasIndex.vue'
+import BananasIndex from '../views/BananasIndex.vue';
+import BananasNew from '../views/BananasNew.vue'
+
 
 
 Vue.use(VueRouter)
@@ -16,6 +18,11 @@ const routes = [
     path: '/bananas',
     name: 'BananasIndex',
     component: BananasIndex
+  },
+  {
+    path: '/bananas/new',
+    name: 'BananasNew',
+    component: BananasNew
   },
   {
     path: '/about',
